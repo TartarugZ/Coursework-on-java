@@ -48,8 +48,6 @@ public class CoinSearcher {
     public String getCounrtyLink(String requiredCountry){  //возвращает нужную часть http ссылки на определенную страну
                                                           // название стран в каталоге и их название в http сслыке отличается, поэтому этот метод более чем необходим
 
-        Elements listOfCountries = doc.getElementsByAttributeValue("class","cntry");
-
         for(Element oneComparedCountry: listOfCountries){
 
             Elements ytr = oneComparedCountry.getElementsByAttributeValue("class","left wrap nopad");
